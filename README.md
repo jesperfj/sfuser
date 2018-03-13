@@ -1,6 +1,6 @@
 # Print org charts from the Salesforce User table
 
-This is a simple command line tool that leverages [force-rest-api](jesperfj/force-rest-api) to connect to Salesforce API and retrieve records from the User object to print an org chart.
+This is a simple command line tool that leverages [force-rest-api](https://github.com/jesperfj/force-rest-api) to connect to Salesforce API and retrieve records from the User object to print an org chart.
 
 ## Build
 
