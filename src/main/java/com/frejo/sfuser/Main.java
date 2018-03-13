@@ -56,8 +56,9 @@ public class Main {
         List<User> result = api.query("SELECT Username, Name, Title FROM User WHERE Manager.Username = '"+manager+"' AND isActive = true",
                 User.class).getRecords();
         for(User u: result) {
-            System.out.println(indent+u.username+ " -- "+ u.name+ " -- "+ u.title);
-            reportsRecursive(api, u.username, indent+"  ");
+            //System.out.println(indent+u.username+ " -- "+ u.name+ " -- "+ u.title);
+            System.out.println("\""+u.username + "\",\"" + u.title+ "\"," + indent + "\""+u.name+"\"");
+            reportsRecursive(api, u.username, indent+",");
         }
     }
 
